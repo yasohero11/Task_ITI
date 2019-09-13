@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="container text-center justify-content-center" style="margin-top:50px ">
+        {% include 'includes/_message.html' %}
+<form class="form-horizontal" method="post" action="{{url_for('search')}}">
+<input style=" height: 70px; border-radius: 50px;background:linear-gradient(to right, #8a2387, #e94057, #f27121); color:white; font-size:30px;" type="name" class="form-control" id="name" name="name" placeholder="Search For Product" value="{{request.form.name}}">
+<button style="width: 20%; margin: 10px auto;border-radius : 30px"   type="submit" class="btn btn-success btn-lg"><i style="font-size: 40px;" class="fas fa-search"></i></button>
+</form>
+</div>
+{% endblock %}
+
+
+

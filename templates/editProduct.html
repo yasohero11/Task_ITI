@@ -1,0 +1,34 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+{% include 'includes/_message.html' %}
+<form class="form-horizontal" method="post" action="" style="width: 50%; margin: 70px auto">
+      </div>
+        <div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Product Name</label>
+            <div class="cols-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="name" id="name" value="{{request.form.name}}" placeholder="Enter your Name"required >
+                </div>
+                <div class="dis"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Image Link</label>
+            <div class="cols-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-link fa" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="link" id="link" value="{{request.form.link}}" placeholder="Enter your Name">
+                </div>
+                <div class="dis"></div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="comment">Discrption:</label>
+            <textarea name="dis" class="form-control" rows="5" id="comment" value="{{request.form.dis}}" required></textarea>
+          </div>
+          <button type="submit" value="Submit"  class="btn btn-primary btn-lg btn-block login-button">Save Changes</button>
+        </form>
+{% endblock %}

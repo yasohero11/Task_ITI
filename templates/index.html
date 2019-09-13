@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="../static/css/style.css">
+    {% extends 'layout.html' %}
+
+    {% block body %}
+    <div id="slides" class="carousel slide" data-ride="carousel">
+         <ul class="carousel-indicators">
+             <li data-target="#slides" data-slide-to="0" class="active"></li>
+             <li data-target="#slides" data-slide-to="1"></li>
+             <li data-target="#slides" data-slide-to="2"></li>
+         </ul>
+          <div class="carousel-inner"style="text-align: center"> <!-- the div that contian all the items-->
+                <div class="carousel-item active" >
+                        <img src="../static/assets/html.jpg" style="width: 100%;">
+                        <div class="carousel-caption">
+                                <!--<h1 class="display-2" style="color: black">Learn HTML</h1>-->
+                                <button type="button" class="btn btn-outline-light btn-lg" style="width: 145px;">Buy</button>
+                                <button type="button" class="btn btn-primary btn-lg">Read More...</button>           
+                        </div>
+                </div>
+                <div class="carousel-item">
+                        <img src="../static/assets/wordpress.jpg" style="width: 70%;">
+                        
+                </div>
+                <div class="carousel-item">
+                        <img src="../static/assets/jsimage.png" style="width: 70%; ">
+                </div>
+         </div>
+
+     </div>
+     <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Courses</h1>
+                <hr style="width: 20%;background: #9A21FF">
+                <div class="col-12">
+                    <P class="lead"> <!-- lead :  gives the text font and family-->
+                       You can choose your course and dive right into it 
+                    </P>    
+                    <button type="button" class="btn btn-outline-dark btn-lg"> Where to start ?</button>
+
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="container-fluid padding">
+            <hr class="my-4">
+         <div class="row text-center padding justify-content-center">
+            <div class="col-xs-1"></div>
+             <div class="col-xs-12" >
+                    <i class="fas fa-code" style="font-size: 150px;color:orangered"></i>
+                    <h1 class="display-4">HTML5</h1>
+                    <p class="lead">HTML5 is a software solution stack that</p>
+                    <p class="lead"> defines the properties and behaviors of web page content by</p>
+                    <p class="lead"> implementing a markup based pattern <a href="https://en.wikipedia.org/wiki/HTML5" style="font-size: 30px;color: red">...</a></p>
+             </div>
+             <div class="col-1"></div>
+             <div class="col-xs-12">
+                    <i class="fab fa-js" style="font-size: 150px;color:#E9D84C"></i>
+                    <h1 class="display-4">JavaScript</h1>
+                    <p class="lead">HTML5 is a software solution stack that</p>
+                    <p class="lead"> defines the properties and behaviors of web page content by</p>
+                    <p class="lead"> implementing a markup based pattern <a href="https://en.wikipedia.org/wiki/HTML5" style="font-size: 30px;color: red">...</a></p>
+
+             </div>
+             <div class="col-1"></div>
+             <div class="col-xs-12">
+                    <i class="fab fa-bootstrap"  style="font-size: 150px;color:#7C43F8"></i>
+                    <h1 class="display-4">Bootstrap</h1>
+                    <p class="lead">Bootstrap is a free and open source front</p>
+                    <p class="lead"> end development framework for the creation of websites and </p>
+                    <p class="lead">web apps. The Bootstrap framework is built on HTML <a href="https://en.wikipedia.org/wiki/HTML5" style="font-size: 30px;color: red">...</a></p>
+                     
+             </div>
+             <div class="col-1"></div>
+         </div>
+        <hr class="my-4"> <!-- put horizental line on thr top and bottom of the div-->
+     </div>
+    
+          <div style="text-align: center;padding: 20px">
+                <iframe  style="width: 70% ;height:700px;" 
+                src="https://www.youtube.com/embed/qpyC2lSJ93g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+               </iframe>
+          </div>
+                   
+            
+     
+     <div class="container-fluid padding" style="background:linear-gradient(to right, #12c2e9, #c471ed, #f64f59); height: 700px;">
+            <div class="row welcome text-center">
+                    <div class="col-12" style="margin-top: 200px;">
+                        <h1 class="display-4">Go TO COURSES DASHBOARD</h1>
+                        <button onclick="window.location.href = '/products' " style="border-radius: 200px;padding: 0px" type="button" class="btn btn-outline-dark btn-lg"><i style="font-size: 200px" class="fas fa-chevron-circle-right"></i>
+                        </button>      
+                    </div>
+                </div>
+     </div>
+     <div class="container-fluid padding" id="nav">
+         <div class="row text-center padding ">
+                <div class="col-12">
+                        <h2 class="display-4">Connect</h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="#"><i class="fab fa-facebook" id="facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter" id="twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a  href="#"><i class="fab fa-instagram" id="instagram"></i></a>
+                </div>
+
+         </div>
+     </div>
+     {% endblock %}

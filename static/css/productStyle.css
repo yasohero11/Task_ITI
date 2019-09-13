@@ -1,0 +1,40 @@
+.card{
+  position: relative;  
+  z-index: 1;
+ 
+  
+}
+.card-body{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    background: rgb(0, 0, 0 , 0.5);
+    width: 50%;
+    color: white;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -2;  
+    border: linear-gradient(to right, #1f4037, #99f2c8)   solid 2px;
+}
+ img[class=card-img-top]{
+    background: white;
+    width: 100%;
+    height: 300px;
+}
+
+.card-contant:hover .card-body{
+ transform: translateX(100%);
+}
+.card-contant{
+    width:465px;  
+}
+a{
+    margin-bottom: 10px; 
+}
+footer{
+    margin-top:50px; 
+}
+
+#container{
+    margin-top: 70px;
+}

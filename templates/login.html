@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../static/css/login.css">
+{% extends 'layout.html' %}
+
+{% block body %}
+      <div class="container-fluid padding">
+          
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4" style="color: white">Login</h1>
+                    <hr style="width: 20%;background: white; height:1.5px ;">
+                    <div class="col-12">
+                            <form action="{{url_for('login')}}" method="post">
+                                <div class="form-group">
+                                  <label for="email">Email address:</label>
+                                  <input type="name" class="form-control" id="name" name="name" value="{{request.form.name}}">
+                                </div>
+                                <div class="form-group">
+                                  <label for="pwd">Password:</label>
+                                  <input type="password" name="password" class="form-control" id="pwd" value="{{request.form.password}}">
+                                </div>
+                                <div class="form-group form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Remember me
+                                  </label>
+                                  <a href="signup.html" style="color:#2A00C4">Sign Up</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                
+                              </form>
+                              {% include 'includes/_message.html' %}
+                    </div>
+                </div>
+            </div>
+         </div>
+
+  {% endblock %}

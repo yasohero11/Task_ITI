@@ -1,0 +1,16 @@
+body{
+    background: url(../assets/loginbg.jpg) no-repeat;
+    background-size: cover;
+}
+form{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    width: 40%; 
+    margin: 5% auto;
+    height: 500px;
+    padding: 5%;
+    text-align: center;
+    box-sizing: border-box;
+}
+form button{
+ width: 80%
+}

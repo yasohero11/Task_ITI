@@ -1,0 +1,38 @@
+#nav i{
+    font-size: 30px;
+    margin-right: 35px;
+    color:slategray
+}
+
+#links a{
+    display:block;
+    text-align: left;
+	text-decoration: none;
+	color: #CED0D5; 
+	transition:0.4s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#links::after{
+	content: "";
+	background: #A8A6A9;
+	width: 1.5px;
+	height: 80%;
+	position: absolute;
+	right: 10%;
+	top: 15%
+	
+}
+#links{
+    padding-top: 5%;
+    padding-left: 5%;
+	box-sizing: border-box;
+	text-align: center;
+    /*background: #37416A;*/
+    font-size: 150%;
+    position: relative  
+}
+#links a:hover{
+	color:#2A53F8;
+	transform: translateX(15px);	
+}

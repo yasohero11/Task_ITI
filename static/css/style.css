@@ -1,0 +1,13 @@
+
+#instagram:hover{
+    background: linear-gradient(to right bottom,#8000B4,#D407F5,#FAB147,#FAB147);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+#facebook:hover , #twitter:hover{
+    color: #4286f4;
+ }
+ 
+ #facebook{
+     margin-left: 40px;
+ }
